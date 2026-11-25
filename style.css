@@ -1,15 +1,18 @@
 :root {
-  --bg-main: #0b0d11;
-  --bg-alt: #0f1218;
-  --bg-surface: #141821;
-  --bg-elevated: #1b202c;
-  --text-primary: #f3f4f6;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
-  --accent-amber: #f59e0b;
-  --accent-amber-hover: #d97706;
+  --bg-main: #08090a;
+  --bg-alt: #0c0e10;
+  --bg-surface: #121518;
+  --bg-elevated: #171b1f;
+  --text-primary: #f5f7f8;
+  --text-secondary: #b8c0c8;
+  --text-muted: #7c858e;
+  --accent-neon: #4ade80;
+  --accent-neon-bright: #86efac;
+  --accent-neon-deep: #16a34a;
+  --accent-neon-ink: #07130b;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --border-neon: rgba(74, 222, 128, 0.35);
   --radius-md: 12px;
   --radius-sm: 8px;
   --container-max: 1080px;
@@ -36,7 +39,7 @@ body {
 }
 
 a {
-  color: var(--accent-amber);
+  color: var(--accent-neon);
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
 }
@@ -50,7 +53,7 @@ a {
 
 /* Header & Navigation */
 .site-header {
-  background-color: rgba(11, 13, 17, 0.92);
+  background-color: rgba(8, 9, 10, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 16px 0;
@@ -76,11 +79,11 @@ a {
 }
 
 .brand-logo span {
-  color: var(--accent-amber);
+  color: var(--accent-neon);
 }
 
 .brand-logo:hover {
-  color: var(--accent-amber);
+  color: var(--accent-neon-bright);
 }
 
 .nav-links {
@@ -98,12 +101,13 @@ a {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--accent-amber);
+  color: var(--accent-neon);
 }
 
 /* Hero Section */
 .hero {
   padding: 72px 0 64px;
+  background: radial-gradient(circle at 80% 15%, rgba(74, 222, 128, 0.08), transparent 48%), var(--bg-main);
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -113,7 +117,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-neon);
 }
 
 .hero h1 {
@@ -161,16 +165,16 @@ a {
 }
 
 .btn-primary {
-  background-color: var(--accent-amber);
-  color: #111317;
-  border-color: var(--accent-amber);
+  background-color: var(--accent-neon);
+  color: var(--accent-neon-ink);
+  border-color: var(--accent-neon);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background-color: var(--accent-amber-hover);
-  border-color: var(--accent-amber-hover);
-  color: #111317;
+  background-color: var(--accent-neon-bright);
+  border-color: var(--accent-neon-bright);
+  color: var(--accent-neon-ink);
 }
 
 .btn-secondary {
@@ -181,9 +185,9 @@ a {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background-color: #252b3b;
-  border-color: var(--accent-amber);
-  color: var(--text-primary);
+  background-color: #1f252b;
+  border-color: var(--accent-neon);
+  color: var(--accent-neon);
 }
 
 /* Content Sections */
@@ -227,6 +231,10 @@ a {
   padding: 24px;
 }
 
+.card:hover {
+  border-color: var(--border-neon);
+}
+
 .card-kicker {
   display: block;
   margin-bottom: 10px;
@@ -234,7 +242,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-neon);
 }
 
 .card h3,
@@ -254,7 +262,7 @@ a {
 /* Shop Radio / Apple Music Player */
 .music-player-card {
   background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-surface) 100%);
-  border: 1px solid rgba(245, 158, 11, 0.28);
+  border: 1px solid var(--border-neon);
   border-radius: var(--radius-md);
   padding: 24px;
 }
@@ -276,9 +284,9 @@ a {
 
 .playlist-badge {
   display: inline-block;
-  background-color: rgba(245, 158, 11, 0.14);
-  color: var(--accent-amber);
-  border: 1px solid rgba(245, 158, 11, 0.35);
+  background-color: rgba(74, 222, 128, 0.14);
+  color: var(--accent-neon);
+  border: 1px solid var(--border-neon);
   border-radius: 999px;
   padding: 4px 12px;
   font-size: 0.8rem;
@@ -349,4 +357,4 @@ a {
   .apple-music-embed iframe {
     height: 380px;
   }
-
+}
