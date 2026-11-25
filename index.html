@@ -3,42 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="KellzTV — 1998 Chevy Express Camper Build, Plumbing, HVAC & Maintenance Diagnostics." />
   <title>KellzTV | Van Build, Trades &amp; Shop Radio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="site-header">
-    <div class="container nav-flex">
-      <a href="#" class="logo">KELLZ<span>TV</span></a>
-      <nav class="nav-links">
+    <div class="container nav-bar">
+      <a class="brand" href="#top">KELLZTV</a>
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="#van-build">The Van</a>
         <a href="#trades">Trades &amp; Fixes</a>
         <a href="#radio">Shop Radio</a>
-        <a href="mailto:Mike@Kellztv.com" class="btn-outline">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
+  <main id="top">
     <section class="hero">
-      <div class="container">
-        <span class="badge">BUILD LOGS &bull; DIAGNOSTICS &bull; OFF-GRID</span>
+      <div class="container hero-content">
+        <p class="eyebrow">BUILD LOGS &bull; DIAGNOSTICS &bull; OFF-GRID</p>
         <h1>Turning Wrenches, Fixing Systems &amp; Building the Rig.</h1>
-        <p class="hero-sub">
-          Documenting the ground-up renovation of a 1998 Chevrolet Express 1500 camper, 
-          real-world plumbing &amp; HVAC troubleshooting, and what’s playing in the shop.
+        <p class="hero-subtitle">
+          Documenting the ground-up renovation of a 1998 Chevrolet Express 1500 camper,
+          real-world plumbing &amp; HVAC troubleshooting, and what's playing in the shop.
         </p>
         <div class="hero-actions">
-          <a href="#van-build" class="btn-primary">Explore the Van Build</a>
-          <a href="#radio" class="btn-secondary">Listen to Shop Radio</a>
+          <a class="btn btn-primary" href="#van-build">Explore the Van Build</a>
+          <a class="btn btn-secondary" href="#radio">Listen to Shop Radio</a>
         </div>
       </div>
     </section>
 
-    <!-- The Van Build Section -->
     <section id="van-build" class="section">
       <div class="container">
         <div class="section-header">
@@ -51,7 +47,7 @@
             <span class="card-tag">DRIVETRAIN</span>
             <h3>5.7L L31 Vortec V8</h3>
             <p>
-              JEGS/ATK replacement crate motor with upgraded MPFI spider injectors, 
+              JEGS/ATK replacement crate motor with upgraded MPFI spider injectors,
               Holley aluminum timing cover, mechanical clutch fan, and a Street Smart 4L60E transmission.
             </p>
           </article>
@@ -60,7 +56,7 @@
             <span class="card-tag">OFF-GRID POWER</span>
             <h3>200Ah LiFePO4 &amp; Solar</h3>
             <p>
-              Dual 100Ah 12V lithium batteries managed by a custom Bluetooth BMS, 
+              Dual 100Ah 12V lithium batteries managed by a custom Bluetooth BMS,
               roof-mounted solar array, Renogy DC-DC alternator charging, and a 2000W inverter.
             </p>
           </article>
@@ -69,7 +65,7 @@
             <span class="card-tag">INTERIOR &amp; SHELL</span>
             <h3>Insulated Camper Conversion</h3>
             <p>
-              Foil-backed sound deadening down to bare sheet metal, custom pine framing, 
+              Foil-backed sound deadening down to bare sheet metal, custom pine framing,
               carpeted walls, MaxxFan roof ventilation, and a rugged white Raptor liner exterior.
             </p>
           </article>
@@ -77,56 +73,63 @@
       </div>
     </section>
 
-    <!-- Trades & Diagnostics Section -->
     <section id="trades" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <h2>Trades, Plumbing &amp; Diagnostics</h2>
-          <p>Field-tested troubleshooting without the guesswork.</p>
+          <h2>Trades &amp; Diagnostics</h2>
+          <p>Practical troubleshooting from multifamily maintenance, plumbing, and HVAC.</p>
         </div>
 
         <div class="grid-2">
           <article class="card">
-            <span class="card-tag">PLUMBING &amp; HYDRONICS</span>
-            <h3>System Repairs &amp; Code</h3>
+            <span class="card-tag">HVAC &amp; HEAT PUMPS</span>
+            <h3>System Diagnostics &amp; Repair</h3>
             <p>
-              Journeyman plumbing field notes, backflow prevention, water heater diagnostics, 
-              and clean piping practices built on decades of residential and commercial service.
+              Hands-on fault isolation, airflow and refrigerant checks, electrical controls,
+              and keeping aging heat pumps and mechanical systems running reliably.
             </p>
           </article>
 
           <article class="card">
-            <span class="card-tag">HVAC &amp; ELECTRICAL</span>
-            <h3>Heat Pumps &amp; Controls</h3>
+            <span class="card-tag">PLUMBING &amp; CODE</span>
+            <h3>Service Work &amp; Code Standards</h3>
             <p>
-              Step-by-step multimeters, refrigerant cycle checks, 12V DC &amp; 120V AC troubleshooting, 
-              and keeping legacy residential equipment running right.
+              Residential and commercial plumbing repairs, backflow prevention awareness,
+              and ongoing review of the Uniform Plumbing Code.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Apple Music Playlist Section -->
-    <<iframe
-  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-  frameborder="0"
-  height="450"
-  style="width: 100%; max-width: 100%; overflow: hidden; border-radius: 10px;"
-  title="Shop Radio - Apple Music Playlist"
-  loading="lazy"
-  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-  src="https://embed.music.apple.com/us/playlist/shop-radio/pl.u-EgNrIMkDMxqP">
-</iframe>
+    <section id="radio" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Shop Radio</h2>
+          <p>The rotation while wrenching on the Express and running repairs.</p>
+        </div>
 
+        <div class="player-container">
+          <iframe
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+            frameborder="0"
+            height="450"
+            style="width: 100%; max-width: 100%; overflow: hidden; border-radius: 12px;"
+            title="Shop Radio - Apple Music Playlist"
+            loading="lazy"
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            src="https://embed.music.apple.com/us/playlist/shop-radio/pl.u-EgNrIMkDMxqP">
+          </iframe>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-flex">
+  <footer id="contact" class="site-footer">
+    <div class="container footer-bar">
       <p>&copy; 2026 KellzTV. Built on static HTML &amp; CSS.</p>
       <a href="mailto:Mike@Kellztv.com">Mike@Kellztv.com</a>
     </div>
   </footer>
-
 </body>
 </html>
