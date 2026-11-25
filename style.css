@@ -39,7 +39,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(15, 17, 21, 0.92);
+  background-color: rgba(15, 17, 21, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -52,8 +52,10 @@ body {
   gap: 16px;
 }
 
-.brand {
-  color: var(--text);
+.brand,
+.brand:visited,
+.brand:hover {
+  color: #f3f4f6;
   text-decoration: none;
   font-weight: 800;
   font-size: 1.15rem;
@@ -245,6 +247,22 @@ body {
 .player-container iframe {
   display: block;
   width: 100%;
+}
+
+.player-fallback {
+  margin: 12px 4px 2px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.player-fallback a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.player-fallback a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
